@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
-import { Book } from 'lucide-react'
+// import { Book } from 'lucide-react'
 import BookCover from './BookCover'
 
 const BookOverview = ({
@@ -13,7 +13,7 @@ const BookOverview = ({
     availableCopies, 
     description, 
     color, 
-    cover, 
+    coverUrl, 
 }: Book) => {
   return (
     <section className='book-overview'>
@@ -44,7 +44,7 @@ const BookOverview = ({
                 <BookCover 
                     variant='wide'
                     coverColor={color}
-                    coverImage ={cover}
+                    coverImage ={coverUrl}
                  />
 
                 <div className='absolute left-16 top-10 opacity-40 max-sm: hidden'></div>
